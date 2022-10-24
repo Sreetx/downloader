@@ -16,3 +16,6 @@ Youtube:
 Yuk view website kami:
   
   https://postingan4ku.blogspot.com/
+
+# Script Ini Adalah Script Open Source. Silakan Unduh Script Ini Sesuka Hati Anda
+# This Script Is an Open Source Script. Please Download This Script As You Like
