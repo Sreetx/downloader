@@ -1,7 +1,9 @@
-# Night Eagle
+# Night Eagle > Downloader
 Terima kasih karena telah menggunakan script kami
 # Deskripsi:
-Night Eagle adalah scirpt multi fungsi yang bisa mengunduh file dari manapun sumbernya, termasuk github. Jika ingin script pengunduh file opsi lengkap, Pake ini aja....
+
+Night Eagle telah diubah namanya menjadi Donwloader
+Downloader adalah scirpt multi fungsi yang bisa mengunduh file dari manapun sumbernya, termasuk github. Jika ingin script pengunduh file opsi lengkap, Pake ini aja....
 
 Yuk dukung kami di:
 
