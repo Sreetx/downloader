@@ -127,7 +127,6 @@ port = options.port
 prxy = options.prxy
 passwd = options.password
 clone = options.clone
-tentang = options.tentang
 penyimpanan = options.penyimpanan
 hlp = options.hlp
 if link:
