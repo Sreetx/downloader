@@ -9,11 +9,12 @@ except: print('\n [!] Anda tidak memiliki module requests, module akan diinstall
 os.system('cls||clear')
 banner = """
 #----------------------------------------------------------------#
-<|-----------------------| Night Eagle |------------------------|>
+<|------------------| Downloader By Sreetx |--------------------|>
  | Author:             RX77E                                    |
  | Spesial Thank's:    RX77E                                    |
  | Github:             https://github.com/Sreetx                |
  | Instagram:          https://www.instagram.com/memelucubikin  |
+ | Versi:              1.56.4.8                                 |
 <|--------------------------------------------------------------|>
 #----------------------------------------------------------------#
 """
@@ -31,7 +32,6 @@ Perintah:
     --user       Masukkan perintah ini ketika menggunakan perintah --proxy untuk memasukkan username FTP anda
     --passwd          Masukkan perintah ini ketika menggunakan perintah --proxy untuk memasukkan password login FTP anda
     --gc --gitclone   Gunakan ini untuk mengunduh file dari Github
-    --tentang         Gunakan ini untuk meminta bantuan atau penjelasan tingkat lanjut
 
 Contoh penggunaan:
     python '''+sys.argv[0]+''' --gitclone https://github.com/Sreetx/riddles
@@ -110,17 +110,8 @@ def kloning(clone):
             print('\a [+] Berhasil, file disimpan pada directory "hasil"\n');os.system('rm hasil/master.zip');sys.exit(1)
         except zipfile.BadZipFile: print('\a\a\a [!] File zip bermasalah!!! Pengekstrakan tidak dapat dilanjutkan. File akan segera dihapus\n');os.system('rm hasil/master.zip');sys.exit()
 
-#Tentang
-def ttg():
-    print(banner)
-    print('\n [~] Meminta bantuan tingkat lanjut....');time.sleep(2)
-    print(' [~] Membuka browser....');time.sleep(1.5)
-    webbrowser.open('https://postingan4ku.blogspot.com/2022/10/bantuanscriptnighteagle.html')
-    print(' [+] Berhasil membuka browser\n');sys.exit()
-
 menu = optparse.OptionParser('\n [?] Belum bisa menggunakan? Ketikan python '+sys.argv[0]+' --hh Untuk meminta bantuan\n')
 menu.add_option('--url', dest='link')
-menu.add_option('--tentang', dest='tentang', action='store_true', default=False)
 menu.add_option('--p', '--port', dest='port')
 menu.add_option('--px','--proxy', dest='prxy')
 menu.add_option('--d','--directory', dest='penyimpanan')
@@ -133,7 +124,6 @@ menu.add_option('--hh', dest='hlp', action='store_true', default=False)
 link = options.link
 ur = options.ur
 port = options.port
-tentang = options.tentang
 prxy = options.prxy
 passwd = options.password
 clone = options.clone
@@ -153,8 +143,6 @@ if clone:
         socket.create_connection((socket.gethostbyname('google.com'), 80), 2)
     except: print(banner);print(' [!] Periksa koneksi internet anda\n');sys.exit()
     kloning(clone)
-if tentang:
-    ttg()
 if hlp:
     bantuan()
 if penyimpanan:
